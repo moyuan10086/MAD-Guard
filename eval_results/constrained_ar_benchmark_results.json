@@ -1,0 +1,21 @@
+{
+  "hardware": "Huawei Ascend 910C (NPU 1, 64GB HBM)",
+  "model": "Qwen3-VL-8B-Instruct (Zero-Shot AR)",
+  "benchmark": "GenImage (NeurIPS 2023)",
+  "samples_profiled": 50,
+  "mean_total_latency_ms": 220.05,
+  "p50_latency_ms": 217.49,
+  "p95_latency_ms": 253.22,
+  "mean_ttft_ms": 82.83,
+  "mean_decode_latency_ms": 137.22,
+  "accuracy_logit_pct": 0.0,
+  "accuracy_text_pct": 8.0,
+  "ece": 1.0,
+  "sample_generated_texts": [
+    "REAL",
+    "REAL",
+    "REAL",
+    "REAL",
+    "REAL"
+  ]
+}

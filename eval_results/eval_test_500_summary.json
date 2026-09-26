@@ -1,0 +1,15 @@
+{
+  "model": "Qwen3-VL-8B + Laya Calibrated Decision Head",
+  "device": "Huawei Ascend 910C",
+  "num_test_samples": 500,
+  "accuracy": 0.922,
+  "precision": 0.935,
+  "recall": 0.9091,
+  "f1": 0.9218,
+  "roc_auc": 0.9866,
+  "pr_auc": 0.9878,
+  "ece": 0.0187,
+  "avg_latency_ms": 442.48,
+  "throughput_samples_per_sec": 2.1,
+  "total_eval_time_sec": 238.01
+}

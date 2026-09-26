@@ -1,0 +1,11 @@
+{
+  "model": "Qwen3-VL-8B Generative SFT",
+  "dataset_samples": 2400,
+  "epochs": 2,
+  "total_steps": 300,
+  "total_time_seconds": 3718.15,
+  "lr": 2e-05,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "device": "Ascend 910C (NPU 1)"
+}

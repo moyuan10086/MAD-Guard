@@ -1,0 +1,14 @@
+{
+  "num_categories": 7,
+  "categories": [
+    "deepfake",
+    "object",
+    "satellite",
+    "animal",
+    "doc",
+    "human",
+    "scene"
+  ],
+  "hidden_size": 4096,
+  "temperature": 0.9983686208724976
+}

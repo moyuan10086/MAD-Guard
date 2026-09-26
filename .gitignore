@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+*.pt
+*.pth
+*.bin
+*.safetensors
+.vscode/
+.DS_Store
+typings/
+weights/
+*.tar.gz
+*.zip
+*毕业论文*.pdf
+sample_forensic_face.png
+latex_paper/*.aux
+latex_paper/*.log
+latex_paper/*.out
+latex_paper/*.blg
+latex_paper/*.synctex.gz
+latex_paper/*.fdb_latexmk
+latex_paper/*.fls
+
+# Local-only reference material
+王珊珊_毕业论文_终稿.pdf

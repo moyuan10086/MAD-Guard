@@ -1,0 +1,67 @@
+{
+  "model": "Qwen3-VL-8B + Laya Calibrated Decision Head",
+  "device": "Huawei Ascend 910C",
+  "overall": {
+    "num_samples": 5000,
+    "num_fake": 3192,
+    "num_real": 1808,
+    "accuracy": 0.7674,
+    "precision": 0.8693,
+    "recall": 0.7481,
+    "f1": 0.8042,
+    "roc_auc": 0.8641,
+    "avg_latency_ms": 53.74
+  },
+  "per_benchmark": {
+    "ff++": {
+      "num_samples": 1168,
+      "num_fake": 932,
+      "num_real": 236,
+      "accuracy": 0.768,
+      "precision": 0.8163,
+      "recall": 0.9152,
+      "f1": 0.8629,
+      "roc_auc": 0.6491
+    },
+    "satellite": {
+      "num_samples": 875,
+      "num_fake": 443,
+      "num_real": 432,
+      "accuracy": 0.664,
+      "precision": 0.7854,
+      "recall": 0.4628,
+      "f1": 0.5824,
+      "roc_auc": 0.7307
+    },
+    "doc": {
+      "num_samples": 576,
+      "num_fake": 460,
+      "num_real": 116,
+      "accuracy": 0.6719,
+      "precision": 0.9822,
+      "recall": 0.6,
+      "f1": 0.7449,
+      "roc_auc": 0.948
+    },
+    "genimage": {
+      "num_samples": 1940,
+      "num_fake": 916,
+      "num_real": 1024,
+      "accuracy": 0.8273,
+      "precision": 0.8663,
+      "recall": 0.75,
+      "f1": 0.804,
+      "roc_auc": 0.9185
+    },
+    "chameleon": {
+      "num_samples": 441,
+      "num_fake": 441,
+      "num_real": 0,
+      "accuracy": 0.8322,
+      "precision": 1.0,
+      "recall": 0.8322,
+      "f1": 0.9084,
+      "roc_auc": 1.0
+    }
+  }
+}

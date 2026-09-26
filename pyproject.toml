@@ -1,0 +1,42 @@
+[project]
+name = "mad-guard"
+version = "1.0.0"
+description = "MAD-Guard: Controlled Study of Direct Decision Inference versus Autoregressive Generation for Multimodal Forensic Auditing"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Hao Chen", email = "moyuan@stu.gpnu.edu.cn" }
+]
+dependencies = [
+    "transformers==5.5.4",
+    "peft==0.21.0",
+    "accelerate==1.15.0",
+    "safetensors==0.8.0",
+    "numpy>=1.24.0",
+    "pillow>=10.0.0",
+    "tqdm>=4.66.0",
+    "scipy>=1.10.0",
+    "pandas>=2.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+cpu = [
+    "torch==2.10.0",
+    "torchvision==0.25.0",
+]
+ascend = []
+dev = [
+    "pytest>=8.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+managed = true
+
+[tool.uv.sources]
+# torch and torch-npu are supplied by the tested Ascend container/runtime.
