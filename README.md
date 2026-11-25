@@ -38,7 +38,7 @@ All controlled variants share the **exact same `Qwen3-VL-8B-Instruct` backbone**
 | **Binary Contrastive Direct Head** (`CLM-Head`) | Contrastive Binary InfoNCE | **96.55** | **0.9935** | **0.0166** | 54.42 | $4.64\times$ |
 | **Direct Head + Attribution** (`+choice_head`) | BCE + 7-Class CE | 95.20 | 0.9892 | 0.0280 | 53.45 | $4.72\times$ |
 | **MAD-Guard Full** (`+choice +act`, **Ours**) | **Tri-Head Multi-Task** | **96.44** | **0.9940** | **0.0187** | **53.71** | **$4.70\times$** |
-| **MAD-Guard + CLM-Head** (Multi-Task) | **Contrastive Tri-Head** | **96.44** | **0.9936** | 0.0258 | 54.42 | $4.64\times$ |
+| **MAD-Guard + CLM-Head** (Multi-Task) | **Contrastive Tri-Head** | **96.44** | **0.9933** | 0.0170 | 54.42 | $4.64\times$ |
 
 *\*Note: Unnormalized 151,643-vocabulary token probabilities for Supervised AR-SFT exhibit an ECE of **0.4719**; two-word conditional renormalization over `{"REAL", "FAKE"}` yields **0.0845**. Replacing the randomly initialized scalar `noul_head` (93.10%) with the pretrained dual-tower contrastive `CLM-Head` (`CLM_v0.1-8B.pt` + HBM-cached semantic criteria) completely bridges and surpasses Supervised AR-SFT in strict 1-to-1 binary supervision (**96.55%** vs. 94.90%, **0.0166** ECE) with only $+1.30\text{ ms}$ overhead.*
 
